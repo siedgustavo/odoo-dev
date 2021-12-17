@@ -1,17 +1,16 @@
 <?xml version="1.0" ?>
 <odoo>
-    <record id="libros_form_view" model="ir.ui.view">
-        <field name="name">libro.form.view</field>
-        <field name="model">libros</field>
+    <record id="product_type_form_view" model="ir.ui.view">
+        <field name="name">product_type.form.view</field>
+        <field name="model">product_type</field>
         <field name="arch" type="xml">
-            <form string="Libro">
+            <form string="Tipos de Productos">
                 <sheet>
                     <group>
                         <group>
                             <field name="name" />
-                            <field name="editorial" />
-                            <field name="isbn" />
-                            <field name="autor_id" />
+                            <field name="description" />
+                            <field name="state" />
                         </group>
                     </group>
                 </sheet>
@@ -20,15 +19,14 @@
     </record>
 
 
-    <record id="libros_tree_view" model="ir.ui.view">
-        <field name="name">libro.tree.view</field>
-        <field name="model">libros</field>
+    <record id="product_type_tree_view" model="ir.ui.view">
+        <field name="name">product_type.tree.view</field>
+        <field name="model">product_type</field>
         <field name="arch" type="xml">
-            <tree string="Libros">
+            <tree string="Tipos de Productos">
                 <field name="name" />
-                <field name="editorial" />
-                <field name="isbn" />
-                <field name="autor_id" />
+                <field name="description" />
+                <field name="state" />
             </tree>
         </field>
     </record>

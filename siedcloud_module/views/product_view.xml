@@ -8,6 +8,7 @@
                 <sheet>
                     <group>
                         <group>
+                            <field name="image" widget="image" class="oe_avatar"/>
                             <field name="name" />
                             <field name="description" />
                             <field name="product_category_id" />

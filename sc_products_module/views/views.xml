@@ -1,0 +1,61 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="sc_products_module.list">
+      <field name="name">Lista de Productos</field>
+      <field name="model">sc_product</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name" string="Nombre"/>
+          <field name="description" string="Descripción"/>
+          <field name="product_category_id" string="Categoria"/>
+          <field name="price" string="Precio"/>
+          <field name="state" string="Estado"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="sc_products_module.form">
+      <field name="name">Administrar Productos</field>
+      <field name="model">sc_product</field>
+      <field name="arch" type="xml">
+        <form>
+          <field name="name" string="Nombre"/>
+          <field name="description" string="Descripción"/>
+          <field name="product_category_id" string="Categoria"/>
+          <field name="price" string="Precio"/>
+          <field name="state" string="Estado"/>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="sc_products_module.action_window">
+      <field name="name">Productos</field>
+      <field name="res_model">sc_product</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.server" id="sc_products_module.action_server">
+      <field name="name">sc_products_module server</field>
+      <field name="model_id" ref="model_my_module_my_module"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+
+    <menuitem name="sc_products_module" id="sc_products_module.menu_root"/>
+
+    <menuitem name="Menu 1" id="sc_products_module.menu_1" parent="sc_products_module.menu_root"/>
+    <menuitem name="Menu 2" id="sc_products_module.menu_2" parent="sc_products_module.menu_root"/>
+
+    <menuitem name="List" id="sc_products_module.menu_1_list" parent="sc_products_module.menu_1"
+              action="sc_products_module.action_window"/>
+    <menuitem name="Server to list" id="sc_products_module" parent="sc_products_module.menu_2"
+              action="sc_products_module.action_server"/>
+
+  </data>
+</odoo>

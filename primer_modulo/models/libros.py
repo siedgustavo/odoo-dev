@@ -5,6 +5,7 @@ from odoo import models, fields
 class Libros(models.Model):
     _name = 'libros' #nombre de la tabla que se va a generar
 
-    name = fields.Char(string="Nombre del libro") #nombre del campo que es de tipo cadena
-    editorial = fields.Char(string="Editorial")
-    isbn = fields.Char(string="ISBN")
+    name = fields.Char(string="Nombre del libro", required=True) 
+    editorial = fields.Char(string="Editorial", required=True)
+    isbn = fields.Char(string="ISBN", required=True)
+    autor_id = fields.Many2one(comodel_name="autor", string="Autor", requerid=True)

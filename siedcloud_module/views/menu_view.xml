@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="product_action" model="ir.actions.act_window">
+        <field name="name">Productos</field>
+        <field name="res_model">product</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="product_category_action" model="ir.actions.act_window">
+        <field name="name">Categorias de Producto</field>
+        <field name="res_model">product_category</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="product_type_action" model="ir.actions.act_window">
+        <field name="name">Tipos de Producto</field>
+        <field name="res_model">product_type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="SiedCloud Admin" id="siedcloud_menu" />
+    <menuitem name="Productos" id="product_menu" parent="siedcloud_menu" action="product_action"/>
+    <menuitem name="Categorias de Productos" id="product_category_menu" parent="siedcloud_menu" action="product_category_action"/>
+    <menuitem name="Tipos de Productos" id="product_type_menu" parent="siedcloud_menu" action="product_type_action"/>
+</odoo>

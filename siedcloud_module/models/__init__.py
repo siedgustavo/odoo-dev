@@ -1,0 +1,1 @@
+from . import product, product_category, product_type

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Mi primer modulo de odoo ",
+    'name': "Libreria",
     'summary':"""
         Prueba de funcionalidades de odoo
     """,

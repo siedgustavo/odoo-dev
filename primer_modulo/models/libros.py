@@ -7,3 +7,4 @@ class Libros(models.Model):
 
     name = fields.Char(string="Nombre del libro") #nombre del campo que es de tipo cadena
     editorial = fields.Char(string="Editorial")
+    isbn = fields.Char(string="ISBN")

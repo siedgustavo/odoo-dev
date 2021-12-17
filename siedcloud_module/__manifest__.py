@@ -10,6 +10,9 @@
     'depends':[],
     'data':[
         'views/menu_view.xml',
+        'views/product_view.xml',
+        'views/product_category_view.xml',
+        'views/product_type_view.xml',
         'security/siedcloud_security.xml',
         'security/ir.model.access.csv'
     ],

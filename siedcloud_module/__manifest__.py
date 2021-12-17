@@ -13,6 +13,8 @@
         'views/product_view.xml',
         'views/product_category_view.xml',
         'views/product_type_view.xml',
+        'views/customer_view.xml',
+        'views/sale_view.xml',
         'security/siedcloud_security.xml',
         'security/ir.model.access.csv'
     ],

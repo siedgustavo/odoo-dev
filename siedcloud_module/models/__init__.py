@@ -1,1 +1,1 @@
-from . import product, product_category, product_type
+from . import product, product_category, product_type, customer, sale

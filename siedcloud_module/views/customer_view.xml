@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="customer_form_view" model="ir.ui.view">
+        <field name="name">customer.form.view</field>
+        <field name="model">customer</field>
+        <field name="arch" type="xml">
+            <form string="Clientes">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="address" />
+                            <field name="city" />
+                            <field name="zip_code" />
+                            <field name="province" />
+                            <field name="country" />
+                            <field name="identification_type" />
+                            <field name="identification_number" />
+                            <field name="contact" />
+                            <field name="contact_number" />
+                            <field name="contact_email" />
+                            <field name="state" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="customer_tree_view" model="ir.ui.view">
+        <field name="name">customer.tree.view</field>
+        <field name="model">customer</field>
+        <field name="arch" type="xml">
+            <tree string="Customer">
+                <field name="name" />
+                <field name="address" />
+                <field name="city" />
+                <field name="zip_code" />
+                <field name="province" />
+                <field name="country" />
+                <field name="identification_type" />
+                <field name="identification_number" />
+                <field name="contact" />
+                <field name="contact_number" />
+                <field name="contact_email" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+</odoo>

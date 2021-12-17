@@ -18,8 +18,22 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record id="customer_action" model="ir.actions.act_window">
+        <field name="name">Clientes</field>
+        <field name="res_model">customer</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="sale_action" model="ir.actions.act_window">
+        <field name="name">Ventas</field>
+        <field name="res_model">sale</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     <menuitem name="SiedCloud Admin" id="siedcloud_menu" />
     <menuitem name="Productos" id="product_menu" parent="siedcloud_menu" action="product_action"/>
     <menuitem name="Categorias de Productos" id="product_category_menu" parent="siedcloud_menu" action="product_category_action"/>
     <menuitem name="Tipos de Productos" id="product_type_menu" parent="siedcloud_menu" action="product_type_action"/>
+    <menuitem name="Clientes" id="customer_menu" parent="siedcloud_menu" action="customer_action"/>
+    <menuitem name="Ventas" id="sale_menu" parent="siedcloud_menu" action="sale_action"/>
 </odoo>

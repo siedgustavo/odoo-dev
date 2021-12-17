@@ -2,3 +2,5 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_product_user,Acceso a productos,model_product,siedcloud_admin_group_user,1,1,1,1
 access_product_category_user,Acceso a categorias de producto,model_product_category,siedcloud_admin_group_user,1,1,1,1
 access_product_type_user,Acceso a tipos de producto,model_product_type,siedcloud_admin_group_user,1,1,1,1
+access_customer_type_user,Acceso a Clientes,model_customer,siedcloud_admin_group_user,1,1,1,1
+access_sale_type_user,Acceso a Ventas,model_sale,siedcloud_admin_group_user,1,1,1,1

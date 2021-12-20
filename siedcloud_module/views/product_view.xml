@@ -44,7 +44,7 @@
         <field name="arch" type="xml">
             <search>
                 <searchpanel>
-                    <field name="product_category_id" string="Categoria" icon="fa-box"/>
+                    <field name="product_category_id" string="Categoria"/>
                 </searchpanel>
             </search>
         </field>

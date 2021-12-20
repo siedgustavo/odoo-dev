@@ -6,7 +6,8 @@
         <field name="arch" type="xml">
             <form string="Ventas">
                 <header>
-                    <field name="state" widget="statusbar" options="{'clickeable':1}"/>
+                    <button name="boton_finalizar" string="Finalizar" type="object" states="pending" class="oe_highlight"/>
+                    <field name="state" widget="statusbar"/>
                 </header>
                 <sheet>
                     <group>

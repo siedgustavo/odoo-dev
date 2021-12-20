@@ -24,7 +24,6 @@
         </field>
     </record>
 
-
     <record id="product_tree_view" model="ir.ui.view">
         <field name="name">product.tree.view</field>
         <field name="model">product</field>
@@ -38,4 +37,17 @@
             </tree>
         </field>
     </record>
+
+    <record id="product_search_view" model="ir.ui.view">
+        <field name="name">product.search.view</field>
+        <field name="model">product</field>
+        <field name="arch" type="xml">
+            <search>
+                <searchpanel>
+                    <field name="product_category_id" string="Categoria" icon="fa-box"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
 </odoo>

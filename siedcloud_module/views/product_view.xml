@@ -32,6 +32,7 @@
                 <field name="name" />
                 <field name="description" />
                 <field name="product_category_id" />
+                <field name="product_type" />
                 <field name="price" />
                 <field name="state" widget="badge" decoration-info="state == 'desactivado'" decoration-success="state == 'activo'"/>
             </tree>

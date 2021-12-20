@@ -5,6 +5,9 @@
         <field name="model">sale</field>
         <field name="arch" type="xml">
             <form string="Ventas">
+                <header>
+                    <field name="state" widget="statusbar" options="{'clickeable':1}"/>
+                </header>
                 <sheet>
                     <group>
                         <group>
@@ -26,7 +29,7 @@
                 <field name="id" />
                 <field name="create_date" />
                 <field name="customer_id" />
-                <field name="state" />
+                <field name="state"  widget="badge" decoration-info="state == 'pending'" decoration-success="state == 'finalized'"/>
             </tree>
         </field>
     </record>

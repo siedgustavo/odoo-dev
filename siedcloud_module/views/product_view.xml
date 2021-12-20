@@ -5,6 +5,9 @@
         <field name="model">product</field>
         <field name="arch" type="xml">
             <form string="Productos">
+                <header>
+                    <field name="state" widget="statusbar" options="{'clickeable':1}"/>
+                </header>
                 <sheet>
                     <group>
                         <group>
@@ -31,7 +34,7 @@
                 <field name="description" />
                 <field name="product_category_id" />
                 <field name="price" />
-                <field name="state" />
+                <field name="state" widget="badge" decoration-info="state == 'desactivado'" decoration-success="state == 'activo'"/>
             </tree>
         </field>
     </record>
